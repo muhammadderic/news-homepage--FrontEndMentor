@@ -16,6 +16,7 @@
 .prettierignore
 
 # -----
+node_modules
 design/*
 MyNote.txt
 README-template.md
