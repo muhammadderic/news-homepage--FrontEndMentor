@@ -2,11 +2,32 @@
   font-family: "Inter";
   src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype"), url("./assets/fonts/static/Inter-Bold.ttf") format("truetype"), url("./assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
 }
+a {
+  text-decoration: none;
+  color: #111;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter";
   box-sizing: border-box;
+}
+body .navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .navbar .logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+body .navbar .right {
+  display: flex;
+}
+body .navbar .right .link {
+  margin-left: 20px;
 }
 body .attribution {
   font-size: 11px;
