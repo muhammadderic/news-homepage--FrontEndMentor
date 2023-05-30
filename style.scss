@@ -48,7 +48,7 @@ body {
       padding-bottom: 1rem;
       display: grid;
       grid-template-columns: 2fr 1fr;
-      gap: 1rem;
+      gap: 2rem;
 
       .left {
         img {
@@ -92,6 +92,36 @@ body {
                 background-color: hsl(240, 100%, 5%);
               }
             }
+          }
+        }
+      }
+
+      .right {
+        padding: 1.5rem;
+        background-color: hsl(240, 100%, 5%);
+        color: #fff;
+
+        h2 {
+          margin: 0;
+          padding: .5rem 0;
+          font-size: 2.5rem;
+          color: hsl(35, 77%, 62%);
+        }
+
+        .new-topic {
+          margin-bottom: 1rem;
+
+          h3 {
+            font-size: 1.3rem;
+          }
+
+          p {
+            line-height: 1.5rem;
+            color: hsl(233, 8%, 79%);
+          }
+
+          &:not(:last-child) {
+            border-bottom: 1px solid #fff;
           }
         }
       }

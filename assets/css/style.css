@@ -40,7 +40,7 @@ body .dashboard-container .main {
   padding-bottom: 1rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 body .dashboard-container .main .left img {
   width: 100%;
@@ -78,6 +78,30 @@ body .dashboard-container .main .left .bottom section button {
 }
 body .dashboard-container .main .left .bottom section button:hover {
   background-color: hsl(240, 100%, 5%);
+}
+body .dashboard-container .main .right {
+  padding: 1.5rem;
+  background-color: hsl(240, 100%, 5%);
+  color: #fff;
+}
+body .dashboard-container .main .right h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  color: hsl(35, 77%, 62%);
+}
+body .dashboard-container .main .right .new-topic {
+  margin-bottom: 1rem;
+}
+body .dashboard-container .main .right .new-topic h3 {
+  font-size: 1.3rem;
+}
+body .dashboard-container .main .right .new-topic p {
+  line-height: 1.5rem;
+  color: hsl(233, 8%, 79%);
+}
+body .dashboard-container .main .right .new-topic:not(:last-child) {
+  border-bottom: 1px solid #fff;
 }
 body .attribution {
   font-size: 11px;
