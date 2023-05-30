@@ -24,7 +24,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop page](./assets/images/news-dashboard_desktop_ss.png)
-![Mobile page](./assets/images/news-dashboard_mobile_ss.png)
+![Mobile page](./assets/images/news-dashboard_mobile_ss.png | width=100)
 
 ### Links
 
