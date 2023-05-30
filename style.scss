@@ -14,6 +14,10 @@ a {
   }
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 body {
   padding: 0 6rem;
 
@@ -75,7 +79,6 @@ body {
             p {
               margin: 0;
               font-size: 15px;
-              line-height: 1.5rem;
             }
 
             button {
@@ -116,12 +119,50 @@ body {
           }
 
           p {
-            line-height: 1.5rem;
             color: hsl(233, 8%, 79%);
           }
 
           &:not(:last-child) {
             border-bottom: 1px solid #fff;
+          }
+        }
+      }
+    }
+
+    .bottom-page {
+      margin: 4rem 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+
+      .topic {
+        display: flex;
+
+        img {
+          height: 120px;
+          margin-right: 1rem;
+        }
+
+        .items {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          * {
+            margin: 0;
+          }
+
+          h2 {
+            font-size: 2rem;
+            color: hsl(233, 8%, 79%);
+          }
+
+          h3 {
+            cursor: pointer;
+
+            &:hover {
+              color: hsl(5, 85%, 63%);
+            }
           }
         }
       }

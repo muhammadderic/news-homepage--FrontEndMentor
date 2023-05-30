@@ -10,6 +10,10 @@ a:hover {
   color: hsl(5, 85%, 63%);
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 body {
   padding: 0 6rem;
 }
@@ -64,7 +68,6 @@ body .dashboard-container .main .left .bottom section {
 body .dashboard-container .main .left .bottom section p {
   margin: 0;
   font-size: 15px;
-  line-height: 1.5rem;
 }
 body .dashboard-container .main .left .bottom section button {
   width: 50%;
@@ -97,11 +100,41 @@ body .dashboard-container .main .right .new-topic h3 {
   font-size: 1.3rem;
 }
 body .dashboard-container .main .right .new-topic p {
-  line-height: 1.5rem;
   color: hsl(233, 8%, 79%);
 }
 body .dashboard-container .main .right .new-topic:not(:last-child) {
   border-bottom: 1px solid #fff;
+}
+body .dashboard-container .bottom-page {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+body .dashboard-container .bottom-page .topic {
+  display: flex;
+}
+body .dashboard-container .bottom-page .topic img {
+  height: 120px;
+  margin-right: 1rem;
+}
+body .dashboard-container .bottom-page .topic .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .dashboard-container .bottom-page .topic .items * {
+  margin: 0;
+}
+body .dashboard-container .bottom-page .topic .items h2 {
+  font-size: 2rem;
+  color: hsl(233, 8%, 79%);
+}
+body .dashboard-container .bottom-page .topic .items h3 {
+  cursor: pointer;
+}
+body .dashboard-container .bottom-page .topic .items h3:hover {
+  color: hsl(5, 85%, 63%);
 }
 body .attribution {
   font-size: 11px;
