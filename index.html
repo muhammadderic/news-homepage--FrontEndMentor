@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
-
+  <script src="./script.js" defer></script>
   <title>Frontend Mentor | News homepage</title>
 </head>
 
@@ -14,7 +14,7 @@
   <div class="dashboard-container">
     <nav class="navbar">
       <div class="logo">W.</div>
-      <div class="right">
+      <div class="right-bar">
         <div class="link">
           <a href="#">Home</a>
         </div>
@@ -31,6 +31,23 @@
           <a href="#">Categories</a>
         </div>
       </div>
+      <button class="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" class="menuIcon icon icon-tabler icon-tabler-menu-2" width="24"
+          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M4 6l16 0"></path>
+          <path d="M4 12l16 0"></path>
+          <path d="M4 18l16 0"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="closeIcon icon icon-tabler icon-tabler-x" width="24" height="24"
+          viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M18 6l-12 12"></path>
+          <path d="M6 6l12 12"></path>
+        </svg>
+      </button>
     </nav>
 
     <main class="main">
