@@ -1,6 +1,19 @@
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/static/Inter-Regular");
+  src: url("../fonts/static/Inter-Regular") format("truetype");
+}
+
+$path--rel: "../images/";
+
+@mixin img-replace($img, $w: 104px, $h: 47px, $disp: null) {
+  background-image: url('#{$path--rel}/#{$img}');
+  background-repeat: no-repeat;
+  width: $w;
+  height: $h;
+
+  @if ($disp) {
+    display: $disp;
+  }
 }
 
 a {
@@ -21,16 +34,26 @@ body {
   padding: 0 6rem;
   font-family: "Inter", sans-serif;
 
+  @media (max-width: 375px) {
+    width: 375px;
+    padding: 0 1rem;
+  }
+
   .dashboard-container {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    @media (max-width: 375px) {
+      width: 100%;
+    }
 
     .navbar {
       padding: 1.5rem 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      display: none;
 
       .logo {
         font-family: "Inter";
@@ -53,9 +76,19 @@ body {
       grid-template-columns: 2fr 1fr;
       gap: 2rem;
 
+      @media (max-width: 375px) {
+        grid-template-columns: 1fr;
+      }
+
       .left {
         img {
           width: 100%;
+
+          @media (max-width: 375px) {
+            @include img-replace($img: "image-web-3-mobile.jpg");
+            width: 100%;
+            height: 250px;
+          }
         }
 
         .bottom {
@@ -64,10 +97,21 @@ body {
           grid-template-columns: 1fr 1fr;
           gap: 2rem;
 
+          @media (max-width: 375px) {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+          }
+
           h1 {
             margin: 0;
             font-size: 3.5rem;
             line-height: 3.5rem;
+
+            @media (max-width: 375px) {
+              font-size: 2.5rem;
+              font-weight: 900;
+              line-height: 2.5rem;
+            }
           }
 
           section {
@@ -75,9 +119,19 @@ body {
             flex-direction: column;
             justify-content: space-between;
 
+            @media (max-width: 375px) {
+              gap: 1rem;
+            }
+
             p {
               margin: 0;
               font-size: 15px;
+              color: hsl(236, 13%, 42%);
+
+              @media (max-width: 375px) {
+                font-size: 18px;
+                line-height: 2rem;
+              }
             }
 
             button {
@@ -102,6 +156,10 @@ body {
         padding: 1.5rem;
         background-color: hsl(240, 100%, 5%);
         color: #fff;
+
+        @media (max-width: 375px) {
+          margin-top: 6rem 0;
+        }
 
         h2 {
           margin: 0;
@@ -133,6 +191,12 @@ body {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
+
+      @media (max-width: 375px) {
+        margin: 1rem 0;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
 
       .topic {
         display: flex;
