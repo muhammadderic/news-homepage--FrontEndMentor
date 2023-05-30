@@ -53,6 +53,7 @@ body .dashboard-container .navbar .right-bar {
   body .dashboard-container .navbar .right-bar {
     height: 100vh;
     width: 70%;
+    flex-direction: column;
     position: fixed;
     transform: translateX(100%);
     transition: transform 0.2s;
@@ -64,11 +65,11 @@ body .dashboard-container .navbar .right-bar {
     padding-top: 10rem;
   }
 }
-body .dashboard-container .navbar .right-bar .link {
+body .dashboard-container .navbar .right-bar .menu-item {
   margin-left: 2rem;
 }
 @media (max-width: 375px) {
-  body .dashboard-container .navbar .right-bar .link {
+  body .dashboard-container .navbar .right-bar .menu-item {
     font-size: 1.5rem;
     padding: 0.7rem;
     margin: 1rem;

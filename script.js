@@ -1,6 +1,6 @@
 const rightBar = document.querySelector(".right-bar");
 const hamburger = document.querySelector(".hamburger");
-const menuItems = document.querySelectorAll(".link");
+const menuItems = document.querySelectorAll(".menu-item");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
